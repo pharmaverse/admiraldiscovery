@@ -1,0 +1,3 @@
+﻿dataset,dataset_type,variable,variable_label,package,fn,fn_url,adam_ig_reference
+ADSL,ADSL,AGE,Age,admiral,compute_age_years,https://pharmaverse.github.io/admiral/v0.11.1/reference/compute_age_years.html,ADaMIG v1.3. Table 3.2.2 ADSL Subject Demographics Variables
+ADVS,BDS,PARAMCD:BMI,Body Mass Index (kg/m^2),admiral,derive_param_bmi,https://pharmaverse.github.io/admiral/v0.11.1/reference/derive_param_bmi.html,
