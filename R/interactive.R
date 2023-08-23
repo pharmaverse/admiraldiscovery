@@ -3,6 +3,7 @@
 #' Interactively explore admiral functions and the ADaM data sets and variables
 #' they help create.
 #'
+#' @param type type of table to return
 #' @return interactive gt table
 #' @export
 #'
