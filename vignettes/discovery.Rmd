@@ -36,6 +36,7 @@ Auto-linking works here.
 
 ```{r}
 admiraldiscovery::discovery |> 
+  head(n = 10) |> 
   dplyr::mutate(
     fn_linked = glue::glue("`{package}::{fn}()`"),
     .before = package
@@ -52,6 +53,7 @@ Auto-linking works here.
 library(gt)
 
 admiraldiscovery::discovery |> 
+  head(n = 10) |> 
   dplyr::mutate(
     fn_linked = glue::glue("`{package}::{fn}()`"),
     .before = package
