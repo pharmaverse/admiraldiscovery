@@ -85,6 +85,6 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       use_highlight = TRUE,
       use_compact_mode = TRUE,
       use_page_size_select = TRUE,
-      page_size_default = 25,
+      page_size_default = 10,
     )
 }
