@@ -128,7 +128,6 @@ ADPC,OCCDS,ADY,Derive analysis relative day,admiral,derive_vars_dy,https://pharm
 ADPC,OCCDS,ASTDTM,Derive analysis start date,admiral,derive_vars_dtm,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_dtm.html,
 ADPC,OCCDS,AENDTM,Derive analysis end date,admiral,derive_vars_dtm,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_dtm.html,
 ADPC,OCCDS,ASTDT,Derive start date from datetimes,admiral,derive_vars_dtm_to_dt,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_dtm_to_dt.html,
-ADPC,OCCDS,AENDTM,Derive end date from datetimes,admiral,derive_vars_dtm_to_dt,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_dtm_to_dt.html,
 ADPC,OCCDS,AENTM,Derive analysis start time,admiral,derive_vars_dtm_to_tm,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_dtm_to_tm.html,
 ADPC,OCCDS,ADTM_next,Derive next analysis datetime,admiral,derive_vars_joined,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_joined.html,
 ADPC,OCCDS,EXDOSE_next,Derive next dose taken,admiral,derive_vars_joined,https://pharmaverse.github.io/admiral/cran-release/reference/derive_vars_joined.html,
