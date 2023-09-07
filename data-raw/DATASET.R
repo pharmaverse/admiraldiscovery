@@ -11,4 +11,7 @@ attr(discovery$fn, 'label') <- "Function"
 attr(discovery$fn_url, 'label') <- "Function URL"
 attr(discovery$adam_ig_reference, 'label') <- "ADaM Implmentation Guide Reference"
 
+if (discovery |> dplyr::mutate(.by = c("dataset", "variable"), N = dplyr::n()) |> dplyr::pull(N) |> max() > 1L)
+  cli::cli_abort(c("x" = "DUPLICATE VARIABLES FOUND!"))
+
 usethis::use_data(discovery, overwrite = TRUE)
