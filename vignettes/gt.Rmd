@@ -1,0 +1,21 @@
+---
+title: "Discover {admiral} Functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Discover {admiral} Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Use the table below to identify ADaM variables and the {admiral} functions that derive them.
+
+```{r echo=FALSE}
+admiraldiscovery::interactive_discovery("gt")
+```
