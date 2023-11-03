@@ -1,6 +1,7 @@
 ## code to prepare `DATASET` dataset goes here
 
-discovery <- readr::read_csv(file = "./data-raw/admiral-lookup-book.csv")
+discovery <- readr::read_csv(file = "./data-raw/admiral-lookup-book.csv") |>
+  dplyr::arrange(!dataset %in% "ADSL", dataset, variable)
 
 attr(discovery$dataset, 'label') <- "Data Set"
 attr(discovery$dataset_type, 'label') <- "Data Set Type" # ADSL, BDS, OCCDS

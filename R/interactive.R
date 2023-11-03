@@ -31,10 +31,6 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
           name = attr(admiraldiscovery::discovery$dataset, 'label'),
           maxWidth = 100
         ),
-        dataset_type = reactable::colDef(
-          name = attr(admiraldiscovery::discovery$dataset_type, 'label'),
-          maxWidth = 100
-        ),
         variable = reactable::colDef(
           name = attr(admiraldiscovery::discovery$variable, 'label'),
           maxWidth = 100
@@ -72,7 +68,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       .after = "fn_url"
     ) |>
     gt() |>
-    cols_hide(columns = c("fn", "fn_url", "package")) |>
+    cols_hide(columns = c("fn", "fn_url", "package", "dataset_type")) |>
     cols_label(function_link = "Function") |>
     fmt_markdown(columns = "function_link") |>
     sub_missing(missing_text = "")  |>

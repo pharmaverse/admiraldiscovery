@@ -5,7 +5,7 @@
 \alias{discovery}
 \title{Admiral Function Discovery}
 \format{
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 91 rows and 8 columns.
+An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 222 rows and 8 columns.
 }
 \usage{
 discovery
