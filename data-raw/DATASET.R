@@ -10,7 +10,8 @@ attr(discovery$variable_label, 'label') <- "Variable Label"
 attr(discovery$package, 'label') <- "Admiral Package"
 attr(discovery$fn, 'label') <- "Function"
 attr(discovery$fn_url, 'label') <- "Function URL"
-attr(discovery$adam_ig_reference, 'label') <- "ADaM Implmentation Guide Reference"
+attr(discovery$resource1_text, 'label') <- "Resource Link Text"
+attr(discovery$resource1_url, 'label') <- "Resource URL"
 
 if (discovery |> dplyr::mutate(.by = c("dataset", "variable"), N = dplyr::n()) |> dplyr::pull(N) |> max() > 1L)
   cli::cli_abort(c("x" = "DUPLICATE VARIABLES FOUND!"))
