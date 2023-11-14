@@ -7,7 +7,7 @@
 #' @return interactive gt table
 #' @export
 #'
-#' @examplesIf interactive()
+#' @examplesIf FALSE
 #' interactive_discovery("gt")
 #' interactive_discovery("reactable")
 interactive_discovery <- function(type = c("gt", "reactable")) {
@@ -24,7 +24,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
 
 .reactable_discovery <- function() {
   admiraldiscovery::discovery |>
-    dplyr::select(-c("package", "fn")) |>
+    dplyr::select(-c("package", "fn", "resource1_text")) |>
     reactable::reactable(
       columns = list(
         dataset = reactable::colDef(
@@ -49,8 +49,16 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
           },
           width = 150
         ),
-        adam_ig_reference = reactable::colDef(
-          name = attr(admiraldiscovery::discovery$adam_ig_reference, 'label')
+        resource1_url =  reactable::colDef(
+          name = "Resource",
+          cell = function(value, index) {
+            htmltools::tags$a(
+              href = value,
+              target = "_blank",
+              glue::glue("{admiraldiscovery::discovery$resource1_text[index]}")
+            )
+          },
+          width = 150
         )
       ),
       searchable = TRUE,
@@ -67,10 +75,17 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       function_link = glue::glue("[`{package}::{fn}()`]({fn_url})"),
       .after = "fn_url"
     ) |>
+    dplyr::mutate(
+      resource1_link = glue::glue("[{resource1_text}]({resource1_url})")
+    ) |>
     gt() |>
-    cols_hide(columns = c("fn", "fn_url", "package", "dataset_type")) |>
-    cols_label(function_link = "Function") |>
-    fmt_markdown(columns = "function_link") |>
+    cols_hide(columns = c("fn", "fn_url", "package", "dataset_type",
+                          "resource1_text", "resource1_url")) |>
+    cols_label(
+      function_link = "Function",
+      resource1_link = "Resources"
+    ) |>
+    fmt_markdown(columns = c("function_link", "resource1_link")) |>
     sub_missing(missing_text = "")  |>
     cols_width(c(dataset, dataset_type, variable) ~ pct(8)) |>
     cols_align(align = "left") |>

@@ -17,7 +17,7 @@ Interactively explore admiral functions and the ADaM data sets and variables
 they help create.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (FALSE) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 interactive_discovery("gt")
 interactive_discovery("reactable")
 \dontshow{\}) # examplesIf}
