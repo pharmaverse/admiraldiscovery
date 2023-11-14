@@ -9,6 +9,8 @@ Description: Package exports a function that creates an interactive gt or
     used to derive ADaM variables.
 License: MIT + file LICENSE
 URL: https://pharmaverse.github.io/admiraldiscovery/
+Depends:
+    R (>= 4.1)
 Imports: 
     dplyr,
     glue,
