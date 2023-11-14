@@ -4,9 +4,9 @@
 \name{admiraldiscovery-package}
 \alias{admiraldiscovery}
 \alias{admiraldiscovery-package}
-\title{admiraldiscovery: What the Package Does (One Line, Title Case)}
+\title{admiraldiscovery: Discover admiral Functions}
 \description{
-What the package does (one paragraph).
+Package exports a function that creates an interactive gt or reactable table to help users discover the admiral functions that are used to derive ADaM variables.
 }
 \seealso{
 Useful links:
