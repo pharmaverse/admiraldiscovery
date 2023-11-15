@@ -69,10 +69,10 @@ get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) {
   df_all_fns <-
     dplyr::tibble(
       rd_file_name = names(db),
-      rd_file_contents = lapply(rd_file_name, function(x) db[[x]] |> as.character() |> paste(collapse = "")),
-      alias = lapply(rd_file_contents, extract_alias), # these are the function names
+      rd_file_contents = lapply(.data$rd_file_name, function(x) db[[x]] |> as.character() |> paste(collapse = "")),
+      alias = lapply(.data$rd_file_contents, extract_alias), # these are the function names
       has_keyword =
-        lapply(rd_file_contents, function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]"))) |>
+        lapply(.data$rd_file_contents, function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]"))) |>
         unlist()
     )
 
