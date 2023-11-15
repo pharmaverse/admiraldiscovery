@@ -78,8 +78,8 @@ get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) {
 
   # return vector of all functions with matching keyword in help file
   df_all_fns |>
-    dplyr::filter(has_keyword) |>
-    dplyr::pull(alias) |>
+    dplyr::filter(.data$has_keyword) |>
+    dplyr::pull(.data$alias) |>
     unlist(recursive = TRUE)
 }
 
