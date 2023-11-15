@@ -71,6 +71,14 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
 
 .gt_discovery <- function() {
   admiraldiscovery::discovery |>
+    dplyr::left_join(
+      get_admrial_deprecated() |> dplyr::mutate(deprecated = TRUE),
+      by = c("package", "fn")
+    ) |>
+    dplyr::left_join(
+      get_admrial_superseded() |> dplyr::mutate(superseded = TRUE),
+      by = c("package", "fn")
+    ) |>
     dplyr::mutate(
       function_link = glue::glue("[`{package}::{fn}()`]({fn_url})"),
       .after = "fn_url"
@@ -78,18 +86,28 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
     dplyr::mutate(
       resource1_link = glue::glue("[{resource1_text}]({resource1_url})")
     ) |>
-    gt() |>
-    cols_hide(columns = c("fn", "fn_url", "package", "dataset_type",
-                          "resource1_text", "resource1_url")) |>
-    cols_label(
+    gt::gt() |>
+    gt::cols_hide(columns = c("fn", "fn_url", "package", "dataset_type",
+                          "resource1_text", "resource1_url",
+                          "deprecated", "superseded")) |>
+    gt::cols_label(
       function_link = "Function",
       resource1_link = "Resources"
     ) |>
-    fmt_markdown(columns = c("function_link", "resource1_link")) |>
-    sub_missing(missing_text = "")  |>
-    cols_width(c(dataset, dataset_type, variable) ~ pct(8)) |>
-    cols_align(align = "left") |>
-    opt_interactive(
+    # color deprecated/superseded functions
+    gt::tab_style(
+      style = gt::cell_fill(color = '#ffb3ba'),
+      locations = gt::cells_body(columns = gt::everything(), rows = .data$deprecated)
+    ) |>
+    gt::tab_style(
+      style = gt::cell_fill(color = '#ffffba'),
+      locations = gt::cells_body(columns = gt::everything(), rows = .data$superseded)
+    ) |>
+    gt::fmt_markdown(columns = c("function_link", "resource1_link")) |>
+    gt::sub_missing(missing_text = "")  |>
+    gt::cols_width(c(dataset, dataset_type, variable) ~ gt::pct(8)) |>
+    gt::cols_align(align = "left") |>
+    gt::opt_interactive(
       use_search = TRUE,
       use_filters = TRUE,
       use_resizers = TRUE,

@@ -1,8 +1,14 @@
 #' @keywords internal
-#' @importFrom gt gt cols_hide cols_label fmt_markdown sub_missing
-#'   opt_interactive cols_width pct cols_align
+#' @importFrom rlang .data .env %||%
 "_PACKAGE"
 
 ## usethis namespace: start
 ## usethis namespace: end
 NULL
+
+this_fn_is_not_used <- function() {
+  admiral::ae_event
+  admiralonco::bor_cr
+  admiralophtha::admiralophtha_adbcva
+  admiralvaccine::derive_vars_params
+}
