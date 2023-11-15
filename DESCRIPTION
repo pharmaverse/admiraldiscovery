@@ -14,13 +14,17 @@ URL: https://pharmaverse.github.io/admiraldiscovery/
 Depends:
     R (>= 4.1)
 Imports: 
+    admiral,
+    admiralonco, 
+    admiralophtha,
+    admiralvaccine,
     dplyr,
     glue,
     gt (>= 0.10.0),
     htmltools,
-    reactable
+    reactable,
+    tools
 Suggests: 
-    admiral,
     knitr,
     rmarkdown,
     spelling
