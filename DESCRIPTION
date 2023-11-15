@@ -23,6 +23,7 @@ Imports:
     gt (>= 0.10.0),
     htmltools,
     reactable,
+    rlang,
     tools
 Suggests: 
     knitr,
