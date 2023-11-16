@@ -19,3 +19,6 @@ Use the table below to identify ADaM variables and the {admiral} functions that 
 ```{r echo=FALSE}
 admiraldiscovery::interactive_discovery("reactable")
 ```
+
+The links to template examples are the current development versions of package.
+To access a template from your installed version of a package, use the `admiral::use_ad_template()` function.
