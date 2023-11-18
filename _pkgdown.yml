@@ -6,11 +6,19 @@ authors:
   Daniel D. Sjoberg:
     href: https://www.danieldsjoberg.com/
 
-
 navbar:
-  type: default
-  left:
-  - text: reactable
-    href: articles/reactable.html
-  - text: gt
-    href: articles/gt.html
+  structure:
+    left: [gt, reactable, news]
+    right: [gh, search]
+  components:
+    reactable:
+      text: reactable
+      href: articles/reactable.html
+    gt:
+      text: gt
+      href: articles/gt.html
+    gh:
+      icon: fa-github
+      href: https://github.com/pharmaverse/admiraldiscovery
+      aria-label: GitHub
+
