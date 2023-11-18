@@ -28,8 +28,7 @@ package_versions <-
   glue::glue_collapse(sep = ", ", last = ", and ")
 ```
 
-<mark style="background-color: #ffb3ba">Deprecated</mark> and <mark style="background-color: #ffffba">Superseded</mark> functions are highlighted according to their statuses in `r package_versions`.
+<span style="background-color: #ffb3ba">Deprecated</span> and <span style="background-color: #ffffba">Superseded</span> functions are highlighted according to their statuses in `r package_versions`.
 
 The links to template examples are the current development versions of package.
 To access a template from your installed version of a package, use the `admiral::use_ad_template()` function.
-
