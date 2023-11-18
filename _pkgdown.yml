@@ -8,8 +8,8 @@ authors:
 
 navbar:
   structure:
-    left: [gt, reactable, news]
-    right: [gh, search]
+    left: [gt, reactable]
+    right: [gh, changelog]
   components:
     reactable:
       text: reactable
@@ -21,4 +21,8 @@ navbar:
       icon: fa-github
       href: https://github.com/pharmaverse/admiraldiscovery
       aria-label: GitHub
+    changelog:
+      icon: fa-book
+      href: news/index.html
+      aria-label: News
 
