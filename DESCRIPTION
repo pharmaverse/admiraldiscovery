@@ -1,10 +1,11 @@
 Package: admiraldiscovery
 Title: Discover admiral Functions
-Version: 0.0.0.9005
+Version: 0.0.0.9000
 Authors@R: c(
     person("Daniel D.", "Sjoberg", , "danield.sjoberg@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0862-2018")),
-    person("Amelia", "Tran", , "tran.amelia@gene.com", role = "aut")
+    person("Amelia", "Tran", , "tran.amelia@gene.com", role = "aut", 
+           comment = c(ORCID = "0000-0002-9472-0302"))
   )
 Description: Package exports a function that creates an interactive gt or
     reactable table to help users discover the admiral functions that are
@@ -14,19 +15,13 @@ URL: https://pharmaverse.github.io/admiraldiscovery/
 Depends:
     R (>= 4.1)
 Imports: 
-    admiral,
-    admiralonco,
-    admiralophtha,
-    admiralvaccine,
     dplyr,
     glue,
     gt (>= 0.10.0),
     htmltools,
-    reactable,
-    rlang,
-    stringr,
-    tools
+    reactable
 Suggests: 
+    admiral,
     knitr,
     rmarkdown,
     spelling
