@@ -107,6 +107,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
     gt::sub_missing(missing_text = "")  |>
     gt::cols_width(c(dataset, dataset_type, variable) ~ gt::pct(8)) |>
     gt::cols_align(align = "left") |>
+    gt::tab_options(table.font.size = 11) |>
     gt::opt_interactive(
       use_search = TRUE,
       use_filters = TRUE,
