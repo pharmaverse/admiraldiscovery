@@ -15,8 +15,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
   type <- match.arg(type)
 
   # create interactive table ---------------------------------------------------
-  switch(
-    type,
+  switch(type,
     "gt" = .gt_discovery(),
     "reactable" = .reactable_discovery()
   )
@@ -28,18 +27,18 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
     reactable::reactable(
       columns = list(
         dataset = reactable::colDef(
-          name = attr(admiraldiscovery::discovery$dataset, 'label'),
+          name = attr(admiraldiscovery::discovery$dataset, "label"),
           maxWidth = 100
         ),
         variable = reactable::colDef(
-          name = attr(admiraldiscovery::discovery$variable, 'label'),
+          name = attr(admiraldiscovery::discovery$variable, "label"),
           maxWidth = 100
         ),
         variable_label = reactable::colDef(
-          name = attr(admiraldiscovery::discovery$variable_label, 'label')
+          name = attr(admiraldiscovery::discovery$variable_label, "label")
         ),
-        fn_url =  reactable::colDef(
-          name = attr(admiraldiscovery::discovery$fn, 'label'),
+        fn_url = reactable::colDef(
+          name = attr(admiraldiscovery::discovery$fn, "label"),
           cell = function(value, index) {
             htmltools::tags$a(
               href = value,
@@ -49,7 +48,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
           },
           width = 150
         ),
-        resource1_url =  reactable::colDef(
+        resource1_url = reactable::colDef(
           name = "Resource",
           cell = function(value, index) {
             htmltools::tags$a(
@@ -87,24 +86,26 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       resource1_link = glue::glue("[{resource1_text}]({resource1_url})")
     ) |>
     gt::gt() |>
-    gt::cols_hide(columns = c("fn", "fn_url", "package", "dataset_type",
-                          "resource1_text", "resource1_url",
-                          "deprecated", "superseded")) |>
+    gt::cols_hide(columns = c(
+      "fn", "fn_url", "package", "dataset_type",
+      "resource1_text", "resource1_url",
+      "deprecated", "superseded"
+    )) |>
     gt::cols_label(
       function_link = "Function",
       resource1_link = "Resources"
     ) |>
     # color deprecated/superseded functions
     gt::tab_style(
-      style = gt::cell_fill(color = '#ffb3ba'),
+      style = gt::cell_fill(color = "#ffb3ba"),
       locations = gt::cells_body(columns = gt::everything(), rows = .data$deprecated)
     ) |>
     gt::tab_style(
-      style = gt::cell_fill(color = '#ffffba'),
+      style = gt::cell_fill(color = "#ffffba"),
       locations = gt::cells_body(columns = gt::everything(), rows = .data$superseded)
     ) |>
     gt::fmt_markdown(columns = c("function_link", "resource1_link")) |>
-    gt::sub_missing(missing_text = "")  |>
+    gt::sub_missing(missing_text = "") |>
     gt::cols_width(c(dataset, dataset_type, variable) ~ gt::pct(8)) |>
     gt::cols_align(align = "left") |>
     gt::tab_options(table.font.size = 11) |>
