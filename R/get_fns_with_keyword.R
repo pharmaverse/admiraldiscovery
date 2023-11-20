@@ -60,7 +60,7 @@ get_admrial_superseded <- function() {
 
 #' @rdname get_keyword_fns
 #' @export
-get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) {
+get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) { #nolint
   # parse the help files in package
   db <- tools::Rd_db(package = package)
 
