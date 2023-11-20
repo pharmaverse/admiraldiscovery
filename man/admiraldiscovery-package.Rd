@@ -20,7 +20,7 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Amelia Tran \email{tran.amelia@gene.com}
+  \item Amelia Tran \email{tran.amelia@gene.com} (\href{https://orcid.org/0000-0002-9472-0302}{ORCID})
 }
 
 }
