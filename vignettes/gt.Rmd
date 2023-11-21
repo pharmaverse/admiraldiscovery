@@ -29,6 +29,7 @@ package_versions <-
 ```
 
 <span style="background-color: #ffb3ba">Deprecated</span> and <span style="background-color: #ffffba">Superseded</span> functions are highlighted according to their statuses in `r package_versions`.
+If you see a deprecated or superseded function, please file an issue on GitHub for the respective admiral package so the table can be updated.
 
 The links to template examples are the most recent available.
 To access a template from your installed version of a package, use the `admiral::use_ad_template()` function.
