@@ -23,9 +23,29 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
 }
 
 .reactable_discovery <- function() {
-  admiraldiscovery::discovery |>
-    dplyr::select(-c("package", "fn", "resource1_text")) |>
+  temp <- admiraldiscovery::discovery |>
+    dplyr::left_join(
+      get_admrial_deprecated() |> dplyr::mutate(deprecated = TRUE),
+      by = c("package", "fn")
+    ) |>
+    dplyr::left_join(
+      get_admrial_superseded() |> dplyr::mutate(superseded = TRUE),
+      by = c("package", "fn")
+    ) |>
+    #################################################################################
+  dplyr::mutate(superseded = TRUE) |>
+    #################################################################################
+
+  dplyr::select(-c("package", "fn", "resource1_text"))
+
+  temp |>
     reactable::reactable(
+      rowStyle = function(index) {
+        # if (admiraldiscovery::discovery[index, "dataset"] == "ADSL") list(background = '#ffffba')
+        if (temp[index, "superseded"] == TRUE) list(background = '#ffffba')
+        else if (temp[index, "deprecated"] == TRUE) list(background = '#ffb3ba')
+      },
+
       columns = list(
         dataset = reactable::colDef(
           name = attr(admiraldiscovery::discovery$dataset, 'label'),
@@ -59,8 +79,13 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
             )
           },
           width = 150
-        )
+        ),
+
+        deprecated = reactable::colDef(show = F),
+        superseded = reactable::colDef(show = F)
+
       ),
+
       searchable = TRUE,
       filterable = TRUE,
       defaultPageSize = 20,
@@ -79,17 +104,22 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       get_admrial_superseded() |> dplyr::mutate(superseded = TRUE),
       by = c("package", "fn")
     ) |>
-    dplyr::mutate(
-      function_link = glue::glue("[`{package}::{fn}()`]({fn_url})"),
-      .after = "fn_url"
-    ) |>
+
+    #################################################################################
+  dplyr::mutate(superseded = TRUE) |>
+    #################################################################################
+
+  dplyr::mutate(
+    function_link = glue::glue("[`{package}::{fn}()`]({fn_url})"),
+    .after = "fn_url"
+  ) |>
     dplyr::mutate(
       resource1_link = glue::glue("[{resource1_text}]({resource1_url})")
     ) |>
     gt::gt() |>
     gt::cols_hide(columns = c("fn", "fn_url", "package", "dataset_type",
-                          "resource1_text", "resource1_url",
-                          "deprecated", "superseded")) |>
+                              "resource1_text", "resource1_url",
+                              "deprecated", "superseded")) |>
     gt::cols_label(
       function_link = "Function",
       resource1_link = "Resources"
@@ -107,7 +137,6 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
     gt::sub_missing(missing_text = "")  |>
     gt::cols_width(c(dataset, dataset_type, variable) ~ gt::pct(8)) |>
     gt::cols_align(align = "left") |>
-    gt::tab_options(table.font.size = 11) |>
     gt::opt_interactive(
       use_search = TRUE,
       use_filters = TRUE,
