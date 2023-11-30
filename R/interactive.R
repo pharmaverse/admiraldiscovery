@@ -97,11 +97,11 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
 .gt_discovery <- function() {
   admiraldiscovery::discovery |>
     dplyr::left_join(
-      get_admrial_deprecated() |> dplyr::mutate(deprecated = TRUE),
+      get_admiral_deprecated() |> dplyr::mutate(deprecated = TRUE),
       by = c("package", "fn")
     ) |>
     dplyr::left_join(
-      get_admrial_superseded() |> dplyr::mutate(superseded = TRUE),
+      get_admiral_superseded() |> dplyr::mutate(superseded = TRUE),
       by = c("package", "fn")
     ) |>
 

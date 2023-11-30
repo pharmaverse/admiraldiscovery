@@ -8,15 +8,18 @@ authors:
 
 navbar:
   structure:
-    left: [gt, reactable]
+    left: [reactable, presentations]
     right: [gh, changelog]
   components:
     reactable:
-      text: reactable
+      text: Variable Listing
       href: articles/reactable.html
     gt:
       text: gt
       href: articles/gt.html
+    presentations:
+      text: Presentation Archive
+      href: articles/presentation_archive.html
     gh:
       icon: fa-github
       href: https://github.com/pharmaverse/admiraldiscovery

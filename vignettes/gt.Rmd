@@ -28,7 +28,13 @@ package_versions <-
   glue::glue_collapse(sep = ", ", last = ", and ")
 ```
 
-<span style="background-color: #ffb3ba">Deprecated</span> and <span style="background-color: #ffffba">Superseded</span> functions are highlighted according to their statuses in `r package_versions`.
+#### Missing Variables
+
+If you notice a ADaM variable that is missing, please take a moment to [file an issue on GitHub](https://github.com/pharmaverse/admiraldiscovery/issues) to have it added to the listing.
+
+#### Deprecated/Superseded
+
+<span style="background-color: #ffb3ba">Deprecated</span> and <span style="background-color: #ffffba">Superseded</span> functions are highlighted according to their statuses in `r admiraldiscovery::admiral_pkg_versions()`.
 If you see a deprecated or superseded function, please file an issue on GitHub for the respective admiral package so the table can be updated.
 
 The links to template examples are the most recent available.
