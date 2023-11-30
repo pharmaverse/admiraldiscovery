@@ -25,15 +25,18 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
 .reactable_discovery <- function() {
   temp <- admiraldiscovery::discovery |>
     dplyr::left_join(
-      get_admrial_deprecated() |> dplyr::mutate(deprecated = TRUE),
+      get_admiral_deprecated() |> dplyr::mutate(deprecated = TRUE),
       by = c("package", "fn")
     ) |>
     dplyr::left_join(
-      get_admrial_superseded() |> dplyr::mutate(superseded = TRUE),
+      get_admiral_superseded() |> dplyr::mutate(superseded = TRUE),
       by = c("package", "fn")
     ) |>
     #################################################################################
-  dplyr::mutate(superseded = TRUE) |>
+  dplyr::mutate(
+    superseded = ifelse(dplyr::row_number() == 1L, TRUE, FALSE),
+    deprecated = ifelse(dplyr::row_number() == 2L, TRUE, FALSE),
+  ) |>
     #################################################################################
 
   dplyr::select(-c("package", "fn", "resource1_text"))
