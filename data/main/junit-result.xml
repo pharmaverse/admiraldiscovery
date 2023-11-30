@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="discover" timestamp="2023-11-29T15:28:35Z" hostname="d5437770bb2e" tests="1" skipped="0" failures="0" errors="0" time="49.825">
-    <testcase time="49.825" classname="discover" name="Check_Valid_URLs"/>
+  <testsuite name="discover" timestamp="2023-11-30T14:38:05Z" hostname="b209427317dc" tests="1" skipped="0" failures="0" errors="0" time="52.149">
+    <testcase time="52.149" classname="discover" name="Check_Valid_URLs"/>
   </testsuite>
 </testsuites>
