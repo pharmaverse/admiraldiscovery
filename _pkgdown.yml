@@ -8,11 +8,11 @@ authors:
 
 navbar:
   structure:
-    left: [gt, reactable, presentations]
+    left: [reactable, presentations]
     right: [gh, changelog]
   components:
     reactable:
-      text: reactable
+      text: Variable Listing
       href: articles/reactable.html
     gt:
       text: gt
