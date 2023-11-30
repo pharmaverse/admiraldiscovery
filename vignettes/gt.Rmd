@@ -14,18 +14,12 @@ knitr::opts_chunk$set(
 )
 ```
 
+#### Variable Listing
+
 Use the table below to identify ADaM variables and the {admiral} functions that derive them.
 
 ```{r echo=FALSE}
 admiraldiscovery::interactive_discovery("gt")
-```
-
-```{r include=FALSE}
-package_versions <-
-  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |> 
-  lapply(\(x) glue::glue("{x} v{packageVersion(x)}")) |> 
-  unlist() |> 
-  glue::glue_collapse(sep = ", ", last = ", and ")
 ```
 
 #### Missing Variables

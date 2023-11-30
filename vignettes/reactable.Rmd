@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+#### Variable Listing
+
 Use the table below to identify ADaM variables and the {admiral} functions that derive them.
 
 ```{r echo=FALSE}
