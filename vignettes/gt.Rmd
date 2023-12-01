@@ -22,9 +22,9 @@ admiraldiscovery::interactive_discovery("gt")
 
 ```{r include=FALSE}
 package_versions <-
-  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |> 
-  lapply(\(x) glue::glue("{x} v{packageVersion(x)}")) |> 
-  unlist() |> 
+  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |>
+  lapply(\(x) glue::glue("{x} v{packageVersion(x)}")) |>
+  unlist() |>
   glue::glue_collapse(sep = ", ", last = ", and ")
 ```
 
