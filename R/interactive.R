@@ -33,11 +33,6 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       by = c("package", "fn")
     ) |>
 
-  dplyr::mutate(
-    superseded = ifelse(dplyr::row_number() == 1L, TRUE, FALSE),
-    deprecated = ifelse(dplyr::row_number() == 2L, TRUE, FALSE),
-  ) |>
-
   dplyr::select(-c("package", "fn", "resource1_text"))
 
   temp |>
