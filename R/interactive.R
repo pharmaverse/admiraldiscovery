@@ -77,8 +77,8 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
           },
           width = 150
         ),
-        deprecated = reactable::colDef(show = F),
-        superseded = reactable::colDef(show = F)
+        deprecated = reactable::colDef(show = FALSE),
+        superseded = reactable::colDef(show = FALSE)
       ),
 
       searchable = TRUE,
