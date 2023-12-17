@@ -15,7 +15,7 @@ test_that("discovery DATASET is consistent", {
       as.logical()
   )
 
-  # the dataset type is consistent for every dataset
+  # the data set type is consistent for every data set
   expect_true(
     discovery |>
       dplyr::mutate(
