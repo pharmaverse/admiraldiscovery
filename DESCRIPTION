@@ -15,7 +15,7 @@ URL: https://pharmaverse.github.io/admiraldiscovery/
 Depends:
     R (>= 4.1)
 Imports: 
-    admiral,
+    admiral (>= 1.0.0),
     admiralonco,
     admiralophtha,
     admiralvaccine,
@@ -28,7 +28,10 @@ Imports:
     stringr,
     tools
 Suggests: 
+    cli,
     knitr,
+    fs,
+    readr,
     rmarkdown,
     spelling,
     testthat (>= 3.2.0)
