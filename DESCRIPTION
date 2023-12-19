@@ -28,7 +28,10 @@ Imports:
     stringr,
     tools
 Suggests: 
+    cli,
     knitr,
+    fs,
+    readr,
     rmarkdown,
     spelling,
     testthat (>= 3.2.0)

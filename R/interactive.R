@@ -32,8 +32,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       get_admiral_superseded() |> dplyr::mutate(superseded = TRUE),
       by = c("package", "fn")
     ) |>
-
-  dplyr::select(-c("package", "fn", "resource1_text"))
+    dplyr::select(-c("package", "fn", "resource1_text", "dataset_type"))
 
   temp |>
     reactable::reactable(
