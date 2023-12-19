@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="discover" timestamp="2023-12-07T05:35:07Z" hostname="b63a90bb633b" tests="1" skipped="0" failures="0" errors="0" time="68.79">
-    <testcase time="68.79" classname="discover" name="Check_Valid_URLs"/>
+  <testsuite name="discovery" timestamp="2023-12-19T17:17:34Z" hostname="dcfd8199c85e" tests="7" skipped="0" failures="0" errors="0" time="16.082">
+    <testcase time="0.381" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.0720000000000001" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.017" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.003" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.825" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="0.671" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="14.113" classname="discovery" name="Check_Valid_URLs"/>
   </testsuite>
 </testsuites>
