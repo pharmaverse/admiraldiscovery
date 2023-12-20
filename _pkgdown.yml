@@ -4,6 +4,7 @@ template:
 
 development:
   mode: auto
+  version_label: default
 
 authors:
   Daniel D. Sjoberg:
