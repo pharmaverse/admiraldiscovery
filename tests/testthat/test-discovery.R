@@ -90,6 +90,7 @@ test_that("Check Valid URLs", {
     dplyr::select(dplyr::ends_with("_url")) |>
     unlist() |>
     unname() |>
+    na.omit() |>
     unique() |>
     lapply(valid_url)
 

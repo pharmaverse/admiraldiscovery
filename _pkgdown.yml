@@ -2,6 +2,9 @@ url: https://pharmaverse.github.io/admiraldiscovery/
 template:
   bootstrap: 5
 
+development:
+  mode: auto
+
 authors:
   Daniel D. Sjoberg:
     href: https://www.danieldsjoberg.com/
