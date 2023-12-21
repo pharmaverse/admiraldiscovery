@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="discovery" timestamp="2023-12-20T21:04:11Z" hostname="ae4416e46773" tests="7" skipped="0" failures="0" errors="0" time="12.841">
-    <testcase time="0.352" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.07" classname="discovery" name="discovery_DATASET_is_consistent"/>
+  <testsuite name="discovery" timestamp="2023-12-21T15:47:26Z" hostname="c79eb8233f61" tests="7" skipped="0" failures="0" errors="0" time="24.341">
+    <testcase time="0.353" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.071" classname="discovery" name="discovery_DATASET_is_consistent"/>
     <testcase time="0.016" classname="discovery" name="discovery_DATASET_is_consistent"/>
     <testcase time="0.003" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.78" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
-    <testcase time="0.651" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
-    <testcase time="10.969" classname="discovery" name="Check_Valid_URLs"/>
+    <testcase time="0.79" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="0.656" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="22.452" classname="discovery" name="Check_Valid_URLs"/>
   </testsuite>
 </testsuites>
