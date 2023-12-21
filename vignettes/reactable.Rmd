@@ -1,8 +1,8 @@
 ---
-title: "Discover admiral Functions: reactable"
+title: "Discover admiral Functions"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Discover admiral Functions: reactable}
+  %\VignetteIndexEntry{Discover admiral Functions}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
