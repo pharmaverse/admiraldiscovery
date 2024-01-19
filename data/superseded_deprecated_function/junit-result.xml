@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="discovery" timestamp="2024-01-19T23:17:27Z" hostname="34f5866d69a5" tests="7" skipped="0" failures="0" errors="0" time="11.735">
-    <testcase time="0.37" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.0750000000000001" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.017" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.003" classname="discovery" name="discovery_DATASET_is_consistent"/>
-    <testcase time="0.805" classname="discovery" name="Warn_for_Deprecated_Superseded_Functions"/>
-    <testcase time="0.666" classname="discovery" name="Warn_for_Deprecated_Superseded_Functions"/>
-    <testcase time="9.799" classname="discovery" name="Check_Valid_URLs"/>
+  <testsuite name="discovery" timestamp="2024-01-19T23:27:52Z" hostname="5610c8163ac0" tests="7" skipped="0" failures="0" errors="0" time="15.062">
+    <testcase time="0.385" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.0740000000000001" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.016" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.004" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.826" classname="discovery" name="Warn_for_Deprecated_Superseded_Functions"/>
+    <testcase time="0.678" classname="discovery" name="Warn_for_Deprecated_Superseded_Functions"/>
+    <testcase time="13.079" classname="discovery" name="Check_Valid_URLs"/>
   </testsuite>
 </testsuites>
