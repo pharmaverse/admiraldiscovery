@@ -40,7 +40,7 @@ test_that("discovery DATASET is consistent", {
   )
 })
 
-test_that("Warn for Deprecated/Supersded Functions", {
+test_that("Warn for Deprecated/Superseded Functions", {
   expect_output({
     df_superseded <-
       dplyr::inner_join(
