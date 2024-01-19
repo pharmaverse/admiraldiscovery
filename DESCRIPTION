@@ -21,7 +21,7 @@ Imports:
     admiralvaccine,
     dplyr,
     glue,
-    gt (>= 0.10.0),
+    gt (>= 0.10.1),
     htmltools,
     reactable,
     rlang,
@@ -35,7 +35,6 @@ Suggests:
     rmarkdown,
     spelling,
     testthat (>= 3.2.0)
-Remotes: ramnathv/htmlwidgets
 VignetteBuilder: 
     knitr
 Config/testthat/edition: 3
