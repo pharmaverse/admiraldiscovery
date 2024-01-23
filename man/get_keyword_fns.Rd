@@ -2,14 +2,14 @@
 % Please edit documentation in R/get_fns_with_keyword.R
 \name{get_keyword_fns}
 \alias{get_keyword_fns}
-\alias{get_admrial_deprecated}
-\alias{get_admrial_superseded}
+\alias{get_admiral_deprecated}
+\alias{get_admiral_superseded}
 \alias{get_fns_with_keyword}
 \title{Find Functions with Keyword}
 \usage{
-get_admrial_deprecated()
+get_admiral_deprecated()
 
-get_admrial_superseded()
+get_admiral_superseded()
 
 get_fns_with_keyword(package, keyword, lib.loc = NULL)
 }
@@ -27,10 +27,10 @@ get_fns_with_keyword(package, keyword, lib.loc = NULL)
 a character vector of function names
 }
 \description{
-\code{get_admrial_deprecated()}: Returns tibble of all deprecated functions in
+\code{get_admiral_deprecated()}: Returns tibble of all deprecated functions in
 the admiral, admiralonco, admiralophtha, and admiralvaccine packages.
 
-\code{get_admrial_superseded()}: Returns tibble of all superseded functions in
+\code{get_admiral_superseded()}: Returns tibble of all superseded functions in
 the admiral, admiralonco, admiralophtha, and admiralvaccine packages.
 
 \code{get_fns_with_keyword()}: Returns a character vector of functions that have
@@ -40,7 +40,7 @@ package include \verb{#' @keywords deprecated} or \verb{#' @keywords superseded}
 in the function's roxygen2 comments.
 }
 \examples{
-get_admrial_deprecated()
-get_admrial_superseded()
+get_admiral_deprecated()
+get_admiral_superseded()
 get_fns_with_keyword(package = "admiral", keyword = "superseded")
 }

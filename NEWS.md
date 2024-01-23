@@ -1,3 +1,5 @@
 # admiraldiscovery (development version)
 
-* Initial CRAN submission.
+# admiraldiscovery 0.1.0
+
+* Initial release.

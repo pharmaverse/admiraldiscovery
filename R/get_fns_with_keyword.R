@@ -2,10 +2,10 @@
 #'
 #' @description
 #'
-#' `get_admrial_deprecated()`: Returns tibble of all deprecated functions in
+#' `get_admiral_deprecated()`: Returns tibble of all deprecated functions in
 #'   the admiral, admiralonco, admiralophtha, and admiralvaccine packages.
 #'
-#' `get_admrial_superseded()`: Returns tibble of all superseded functions in
+#' `get_admiral_superseded()`: Returns tibble of all superseded functions in
 #'   the admiral, admiralonco, admiralophtha, and admiralvaccine packages.
 #'
 #' `get_fns_with_keyword()`: Returns a character vector of functions that have
@@ -21,14 +21,14 @@
 #' @name get_keyword_fns
 #'
 #' @examples
-#' get_admrial_deprecated()
-#' get_admrial_superseded()
+#' get_admiral_deprecated()
+#' get_admiral_superseded()
 #' get_fns_with_keyword(package = "admiral", keyword = "superseded")
 NULL
 
 #' @rdname get_keyword_fns
 #' @export
-get_admrial_deprecated <- function() {
+get_admiral_deprecated <- function() {
   c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |>
     lapply(
       function(x) {
@@ -44,7 +44,7 @@ get_admrial_deprecated <- function() {
 
 #' @rdname get_keyword_fns
 #' @export
-get_admrial_superseded <- function() {
+get_admiral_superseded <- function() {
   c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |>
     lapply(
       function(x) {
@@ -60,7 +60,7 @@ get_admrial_superseded <- function() {
 
 #' @rdname get_keyword_fns
 #' @export
-get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) { #nolint
+get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) {
   # parse the help files in package
   db <- tools::Rd_db(package = package)
 
@@ -76,10 +76,7 @@ get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) { #nolint
       }),
       alias = lapply(.data$rd_file_contents, extract_alias), # these are the function names
       has_keyword =
-        lapply(
-          .data$rd_file_contents,
-          function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]")) # nolint
-        ) |>
+        lapply(.data$rd_file_contents, function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]"))) |>
           unlist()
     )
 

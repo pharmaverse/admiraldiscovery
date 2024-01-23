@@ -2,21 +2,30 @@ url: https://pharmaverse.github.io/admiraldiscovery/
 template:
   bootstrap: 5
 
+development:
+  mode: auto
+  version_label: default
+
 authors:
   Daniel D. Sjoberg:
     href: https://www.danieldsjoberg.com/
+  Amelia H. Tran:
+    href: https://athenamelia.github.io/
 
 navbar:
   structure:
-    left: [gt, reactable]
+    left: [reactable, presentations]
     right: [gh, changelog]
   components:
     reactable:
-      text: reactable
+      text: Variable Listing
       href: articles/reactable.html
     gt:
       text: gt
       href: articles/gt.html
+    presentations:
+      text: Presentation Archive
+      href: articles/presentation_archive.html
     gh:
       icon: fa-github
       href: https://github.com/pharmaverse/admiraldiscovery

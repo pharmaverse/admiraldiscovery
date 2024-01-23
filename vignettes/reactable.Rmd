@@ -1,8 +1,8 @@
 ---
-title: "Discover admiral Functions: reactable"
+title: "Discover admiral Functions"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Discover admiral Functions: reactable}
+  %\VignetteIndexEntry{Discover admiral Functions}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,11 +14,22 @@ knitr::opts_chunk$set(
 )
 ```
 
+#### Variable Listing
+
 Use the table below to identify ADaM variables and the {admiral} functions that derive them.
 
 ```{r echo=FALSE}
 admiraldiscovery::interactive_discovery("reactable")
 ```
 
-The links to template examples are the current development versions of package.
+#### Missing Variables
+
+If you notice a ADaM variable that is missing, please take a moment to [file an issue on GitHub](https://github.com/pharmaverse/admiraldiscovery/issues) to have it added to the listing.
+
+#### Deprecated/Superseded
+
+<span style="background-color: #ffb3ba">Deprecated</span> and <span style="background-color: #ffffba">Superseded</span> functions are highlighted according to their statuses in `r admiraldiscovery::admiral_pkg_versions()`.
+If you see a deprecated or superseded function, please file an issue on GitHub for the respective admiral package so the table can be updated.
+
+The links to template examples are the most recent available.
 To access a template from your installed version of a package, use the `admiral::use_ad_template()` function.
