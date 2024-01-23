@@ -68,7 +68,6 @@ test_that("Warn for Deprecated/Superseded Functions", {
     }
     print(df_deprecated)
   })
-
 })
 
 
