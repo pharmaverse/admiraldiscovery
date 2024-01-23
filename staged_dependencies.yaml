@@ -1,0 +1,16 @@
+---
+upstream_repos:
+- repo: pharmaverse/admiral
+  host: https://github.com
+- repo: pharmaverse/admiralonco
+  host: https://github.com
+- repo: pharmaverse/admiralophtha
+  host: https://github.com
+- repo: pharmaverse/admiralvaccine
+  host: https://github.com
+
+downstream_repos:
+
+current_repo:
+  repo: pharmaverse/admiraldiscovery
+  host: https://github.com
