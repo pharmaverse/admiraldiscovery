@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="discovery" timestamp="2024-01-24T16:53:37Z" hostname="5a823c21bbad" tests="8" skipped="0" failures="1" errors="0" time="14.459">
+    <testcase time="0.339" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.084" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.015" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.003" classname="discovery" name="discovery_DATASET_is_consistent"/>
+    <testcase time="0.827" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="0.0269999999999999" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="0.674" classname="discovery" name="Warn_for_Deprecated_Supersded_Functions"/>
+    <testcase time="12.49" classname="discovery" name="Check_Valid_URLs">
+      <failure type="failure" message="all(unlist(lst_valid_urls)) is not TRUE ('test-discovery.R:97:3')">all(unlist(lst_valid_urls)) is not TRUE
+
+`actual`:   FALSE
+`expected`: TRUE </failure>
+    </testcase>
+  </testsuite>
+</testsuites>
