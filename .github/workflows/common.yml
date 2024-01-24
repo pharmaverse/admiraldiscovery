@@ -133,3 +133,4 @@ jobs:
     uses: insightsengineering/r.pkg.template/.github/workflows/version-bump.yaml@main
     secrets:
       REPO_GITHUB_TOKEN: ${{ secrets.PHARMAVERSE_BOT }}
+
