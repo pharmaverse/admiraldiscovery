@@ -24,16 +24,7 @@ In the table below you can find links to material from various `{admiral}`-relat
 admiraldiscovery::presentation_archive |> 
   gt::gt() |>
   gt::fmt_markdown(columns = c("Material")) |>
-  gt::cols_width(c(Year, Material) ~ gt::pct(8), c(Title, Conference) ~ gt::pct(18)) |>
-  gt::cols_align(align = "left") |>
-  gt::opt_interactive(
-      use_search = TRUE,
-      use_filters = TRUE,
-      use_resizers = TRUE,
-      use_highlight = TRUE,
-      use_compact_mode = TRUE,
-      use_page_size_select = TRUE,
-      page_size_default = 10,
-    )
+  gt::cols_width(Year ~ gt::pct(4), Material ~ gt::pct(8), c(Title, Conference) ~ gt::pct(20)) |>
+  gt::cols_align(align = "left")
 ```
 
