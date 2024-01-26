@@ -11,4 +11,3 @@ admiral_pkg_versions <- function() {
     unlist() |>
     glue::glue_collapse(sep = ", ", last = ", and ")
 }
-
