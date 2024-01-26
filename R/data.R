@@ -6,6 +6,6 @@
 
 #' Presentation Archive
 #'
-#' This data set contains information and links to resources fo recent presentations
+#' This data set contains information and links to resources of recent presentations
 #' about admiral-related topics.
 "presentation_archive"
