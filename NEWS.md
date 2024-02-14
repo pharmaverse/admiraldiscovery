@@ -1,4 +1,4 @@
-# admiraldiscovery (development version)
+# admiraldiscovery 0.1.1
 
 * Converted presentation archive to a {gt} table.
 
