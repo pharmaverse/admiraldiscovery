@@ -12,6 +12,8 @@ Package exports a function that creates an interactive gt or reactable table to 
 Useful links:
 \itemize{
   \item \url{https://pharmaverse.github.io/admiraldiscovery/}
+  \item \url{https://github.com/pharmaverse/admiraldiscovery}
+  \item Report bugs at \url{https://github.com/pharmaverse/admiraldiscovery/issues}
 }
 
 }
