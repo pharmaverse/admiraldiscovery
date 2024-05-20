@@ -76,7 +76,7 @@ get_fns_with_keyword <- function(package, keyword, lib.loc = NULL) {
       }),
       alias = lapply(.data$rd_file_contents, extract_alias), # these are the function names
       has_keyword =
-        lapply(.data$rd_file_contents, function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]"))) |> #nolint
+        lapply(.data$rd_file_contents, function(x) stringr::str_detect(x, pattern = glue::glue("\\\\keyword\\{[[keyword]]\\}", .open = "[[", .close = "]]"))) |> # nolint
           unlist()
     )
 
