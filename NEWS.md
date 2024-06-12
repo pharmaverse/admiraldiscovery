@@ -1,5 +1,9 @@
 # admiraldiscovery (development version)
 
+* Added additional presentations to the {admiral} presentation listing. (#44)
+
+* Added the names of the presenters to the {admiral} presentation listing. (#43)
+
 # admiraldiscovery 0.1.1
 
 * Converted presentation archive to a {gt} table.
