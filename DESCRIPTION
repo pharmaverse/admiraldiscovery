@@ -17,17 +17,17 @@ BugReports: https://github.com/pharmaverse/admiraldiscovery/issues
 Depends:
     R (>= 4.1)
 Imports: 
-    admiral,
-    admiralonco,
-    admiralophtha,
-    admiralvaccine,
-    dplyr,
-    glue,
+    admiral (>= 1.1.1),
+    admiralonco (>= 1.1.0),
+    admiralophtha (>= 1.1.0),
+    admiralvaccine (>= 0.2.0),
+    dplyr (>= 1.1.4),
+    glue (>= 1.7.0),
     gt (>= 0.10.1),
-    htmltools,
-    reactable,
-    rlang,
-    stringr,
+    htmltools (>= 0.5.8.1),
+    reactable (>= 0.4.4),
+    rlang (>= 1.1.4),
+    stringr (>= 1.5.1),
     tools
 Suggests: 
     cli,
