@@ -1,4 +1,4 @@
-# admiraldiscovery (development version)
+# admiraldiscovery 0.2.0
 
 * Now depending on the latest releases of the admiral family of packages.
 
