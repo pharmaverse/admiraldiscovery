@@ -1,5 +1,7 @@
 # admiraldiscovery (development version)
 
+* Now depending on the latest releases of the admiral family of packages.
+
 * Added additional presentations to the {admiral} presentation listing. (#44)
 
 * Added the names of the presenters to the {admiral} presentation listing. (#43)
