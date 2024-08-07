@@ -1,3 +1,7 @@
+# admiraldiscovery (development version)
+
+* Updates to the ADaM variable listing as there were a few inconsistencies, typos, and missing variable. (#50, @jsaltane123)
+
 # admiraldiscovery 0.2.0
 
 * Now depending on the latest releases of the admiral family of packages.
