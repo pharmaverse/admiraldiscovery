@@ -1,3 +1,7 @@
+# admiraldiscovery (development version)
+
+* Added variables from the {admiralpeds} package to the variable listing. (#51, @Fanny-Gautier)
+
 # admiraldiscovery 0.2.1
 
 * Updates to the ADaM variable listing as there were a few inconsistencies, typos, and missing variable. (#50, @jsaltane123)
