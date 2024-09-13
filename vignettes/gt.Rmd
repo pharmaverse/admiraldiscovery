@@ -24,7 +24,7 @@ admiraldiscovery::interactive_discovery("gt")
 
 #### Missing Variables
 
-If you notice a ADaM variable that is missing, please take a moment to [file an issue on GitHub](https://github.com/pharmaverse/admiraldiscovery/issues) to have it added to the listing.
+If you notice an ADaM variable that is missing, please [file an issue on GitHub](https://github.com/pharmaverse/admiraldiscovery/issues) to have it added.
 
 #### Deprecated/Superseded
 
