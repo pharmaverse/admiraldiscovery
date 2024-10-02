@@ -1,4 +1,4 @@
-# admiraldiscovery (development version)
+# admiraldiscovery 0.3.0
 
 * Added variables from the {admiralpeds} package to the variable listing. (#51, @Fanny-Gautier)
 
