@@ -1,51 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/gt.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/presentation_archive.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/reactable.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/index.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/admiral_pkg_versions.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/admiraldiscovery-package.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/discovery.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/get_keyword_fns.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/interactive_discovery.html</loc>
-  </url>
-  <url>
-    <loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/presentation_archive.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/LICENSE-text.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/LICENSE.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/gt.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/index.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/presentation_archive.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/articles/reactable.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/authors.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/index.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/news/index.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/admiral_pkg_versions.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/admiraldiscovery-package.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/discovery.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/get_keyword_fns.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/index.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/interactive_discovery.html</loc></url>
+<url><loc>https://pharmaverse.github.io/admiraldiscovery/dev/reference/presentation_archive.html</loc></url>
 </urlset>
+
