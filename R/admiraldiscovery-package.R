@@ -11,4 +11,5 @@ this_fn_is_not_used <- function() {
   admiralonco::bor_cr
   admiralophtha::admiralophtha_adbcva
   admiralvaccine::derive_vars_params
+  admiralmetabolic::derive_param_waisthgt
 }

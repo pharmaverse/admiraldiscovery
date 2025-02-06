@@ -1,5 +1,7 @@
 # admiraldiscovery (development version)
 
+* Added variables from the {admiralmetabolic} package to the variable listing. (#57, @manciniedoardo)
+
 # admiraldiscovery 0.3.0
 
 * Added variables from the {admiralpeds} package to the variable listing. (#51, @Fanny-Gautier)
