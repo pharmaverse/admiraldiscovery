@@ -29,7 +29,7 @@ NULL
 #' @rdname get_keyword_fns
 #' @export
 get_admiral_deprecated <- function() {
-  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |>
+  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralmetabolic") |>
     lapply(
       function(x) {
         dplyr::tibble(
@@ -45,7 +45,7 @@ get_admiral_deprecated <- function() {
 #' @rdname get_keyword_fns
 #' @export
 get_admiral_superseded <- function() {
-  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine") |>
+  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralmetabolic") |>
     lapply(
       function(x) {
         dplyr::tibble(
