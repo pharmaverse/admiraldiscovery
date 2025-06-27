@@ -1,3 +1,7 @@
+# admiraldiscovery (development version)
+
+* Added `cran-release` to html links in `admiral-lookup-book.csv` (#68, @bms3)
+
 # admiraldiscovery 0.4.0
 
 * Added variables from the {admiralmetabolic} package to the variable listing. (#57, @manciniedoardo)
