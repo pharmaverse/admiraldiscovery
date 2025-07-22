@@ -1,0 +1,46 @@
+> # original ds is target
+> # updated ds = res2
+> dim(target)   # 424 x 9
+[1] 424   9
+> dim(res2)     # 424 x 9
+[1] 424   9
+> diffdf::diffdf(target, res2)
+Differences found between the objects!
+
+Summary of BASE and COMPARE
+  ======================================================================================
+    PROPERTY                  BASE                                 COMP                 
+  --------------------------------------------------------------------------------------
+      Name                   target                                res2                 
+     Class     "spec_tbl_df, tbl_df, tbl, data..."  "spec_tbl_df, tbl_df, tbl, data..." 
+    Rows(#)                    424                                  424                 
+   Columns(#)                   9                                    9                  
+  --------------------------------------------------------------------------------------
+
+
+Not all Values Compared Equal
+  ===================================
+      Variable     No of Differences 
+  -----------------------------------
+   variable_label         217        
+  -----------------------------------
+
+
+First 10 of 217 rows are shown in table below
+  =========================================================================================================
+      VARIABLE     ..ROWNUMBER..                 BASE                                COMPARE               
+  ---------------------------------------------------------------------------------------------------------
+   variable_label        1           "Derive treatment start date"     "Date of First Exposure to Trea..." 
+   variable_label        2            "Derive treatment end date"      "Date of Last Exposure to Treat..." 
+   variable_label        3                "Derive death date"                    "Date of Death"           
+   variable_label        4            "Derive end of study date"               "End of Study Date"         
+   variable_label        5            "Derive analysis duration"             "Analysis Duration (N)"       
+   variable_label        6           "Derive analysis start date"             "Analysis Start Date"        
+   variable_label        7            "Derive analysis end date"               "Analysis End Date"         
+   variable_label        8        "Derive occurrence flags: 1st o..."  "1st Max Sev./Int. Occurrence F..." 
+   variable_label        9         "Derive treatment emergent flag"    "Treatment Emergent Analysis Fl..." 
+   variable_label       10        "Derive start relative day vari..."     "Analysis Start Relative Day"    
+  ---------------------------------------------------------------------------------------------------------
+
+
+> sink()
