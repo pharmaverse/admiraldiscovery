@@ -18,10 +18,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Daniel D. Sjoberg \email{danield.sjoberg@gmail.com} (\href{https://orcid.org/0000-0003-0862-2018}{ORCID})
+\strong{Maintainer}: Jeff Dickinson \email{jeffowf@gmail.com} (\href{https://orcid.org/0009-0005-4592-1828}{ORCID})
 
 Authors:
 \itemize{
+  \item Daniel D. Sjoberg \email{danield.sjoberg@gmail.com} (\href{https://orcid.org/0000-0003-0862-2018}{ORCID})
   \item Amelia H. Tran \email{tran.amelia@gene.com} (\href{https://orcid.org/0000-0002-9472-0302}{ORCID})
 }
 
