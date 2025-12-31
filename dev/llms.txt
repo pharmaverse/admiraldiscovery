@@ -1,0 +1,46 @@
+## {admiral} Discovery
+
+This repository is a reference for users of the
+[admiral](https://pharmaverse.github.io/admiral/) family of packages to
+discover various
+[admiral](https://pharmaverse.github.io/admiral/)-related pieces of
+information.
+
+- In the Variable Listing tab, users can explore which functions can be
+  used to derive many variables and parameters in ADaM data sets.
+
+- In the Presentation Archive tab, users can find a collection of
+  presentations featuring
+  [admiral](https://pharmaverse.github.io/admiral/) and related
+  packages.
+
+Use the links in the navigation bar to browse the contents of this
+repository.
+
+# Package index
+
+## All functions
+
+- [`admiral_pkg_versions()`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/admiral_pkg_versions.md)
+  : Report Package Versions
+- [`discovery`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/discovery.md)
+  : Admiral Function Discovery
+- [`get_admiral_deprecated()`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/get_keyword_fns.md)
+  [`get_admiral_superseded()`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/get_keyword_fns.md)
+  [`get_fns_with_keyword()`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/get_keyword_fns.md)
+  : Find Functions with Keyword
+- [`interactive_discovery()`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/interactive_discovery.md)
+  : Interactive Admiral Function Discovery
+- [`presentation_archive`](https://pharmaverse.github.io/admiraldiscovery/dev/reference/presentation_archive.md)
+  : Presentation Archive
+
+# Articles
+
+### All vignettes
+
+- [Discover admiral Functions:
+  gt](https://pharmaverse.github.io/admiraldiscovery/dev/articles/gt.md):
+- [Presentation
+  Archive](https://pharmaverse.github.io/admiraldiscovery/dev/articles/presentation_archive.md):
+- [Discover admiral
+  Functions](https://pharmaverse.github.io/admiraldiscovery/dev/articles/reactable.md):
