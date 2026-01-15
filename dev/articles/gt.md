@@ -21,5 +21,5 @@ the respective admiral package so the table can be updated.
 
 The links to template examples are the most recent available. To access
 a template from your installed version of a package, use the
-[`admiral::use_ad_template()`](https:/pharmaverse.github.io/admiral/v1.3.1/cran-release/reference/use_ad_template.html)
+[`admiral::use_ad_template()`](https:/pharmaverse.github.io/admiral/v1.4.0/cran-release/reference/use_ad_template.html)
 function.
