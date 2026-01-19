@@ -1,0 +1,59 @@
+# Changelog
+
+## admiraldiscovery 0.5.0
+
+- Change maintainer
+  ([\#76](https://github.com/pharmaverse/admiraldiscovery/issues/76),
+  [@jeffreyad](https://github.com/jeffreyad))
+
+- Added latest presentations in 2025
+  ([\#73](https://github.com/pharmaverse/admiraldiscovery/issues/73),
+  [@manciniedoardo](https://github.com/manciniedoardo))
+
+- Added `cran-release` to html links in `admiral-lookup-book.csv`
+  ([\#68](https://github.com/pharmaverse/admiraldiscovery/issues/68),
+  [@bms3](https://github.com/bms3))
+
+## admiraldiscovery 0.4.0
+
+- Added variables from the {admiralmetabolic} package to the variable
+  listing.
+  ([\#57](https://github.com/pharmaverse/admiraldiscovery/issues/57),
+  [@manciniedoardo](https://github.com/manciniedoardo))
+
+## admiraldiscovery 0.3.0
+
+- Added variables from the {admiralpeds} package to the variable
+  listing.
+  ([\#51](https://github.com/pharmaverse/admiraldiscovery/issues/51),
+  [@Fanny-Gautier](https://github.com/Fanny-Gautier))
+
+## admiraldiscovery 0.2.1
+
+- Updates to the ADaM variable listing as there were a few
+  inconsistencies, typos, and missing variable.
+  ([\#50](https://github.com/pharmaverse/admiraldiscovery/issues/50),
+  [@jsaltane123](https://github.com/jsaltane123))
+
+## admiraldiscovery 0.2.0
+
+- Now depending on the latest releases of the admiral family of
+  packages.
+
+- Added additional presentations to the {admiral} presentation listing.
+  ([\#44](https://github.com/pharmaverse/admiraldiscovery/issues/44))
+
+- Added the names of the presenters to the {admiral} presentation
+  listing.
+  ([\#43](https://github.com/pharmaverse/admiraldiscovery/issues/43))
+
+## admiraldiscovery 0.1.1
+
+- Converted presentation archive to a {gt} table.
+
+- Updated variable listing to remove superseded functions after many
+  admiral packages made their v1.0 releases.
+
+## admiraldiscovery 0.1.0
+
+- Initial release.
