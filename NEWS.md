@@ -1,4 +1,8 @@
-# admiraldiscovery (development version)
+# admiraldiscovery 0.5.0
+
+* Change maintainer (#76, @jeffreyad)
+
+* Added latest presentations in 2025 (#73, @manciniedoardo)
 
 * Added `cran-release` to html links in `admiral-lookup-book.csv` (#68, @bms3)
 

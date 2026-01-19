@@ -38,7 +38,7 @@ interactive_discovery <- function(type = c("gt", "reactable")) {
       rowStyle = function(index) {
         if (is.na(temp[index, "superseded"]) && is.na(temp[index, "deprecated"])) {
           list(background = "#ffffff")
-        } else if (temp[index, "superseded"] == TRUE) {
+        } else if (isTRUE(temp[index, "superseded"])) {
           list(background = "#ffffba")
         } else if (temp[index, "deprecated"] == TRUE) list(background = "#ffb3ba")
       },
