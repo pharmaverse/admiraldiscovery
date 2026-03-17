@@ -1,3 +1,7 @@
+# admiraldiscovery 0.5.1
+
+* Added `AAGE` (#62)
+
 # admiraldiscovery 0.5.0
 
 * Change maintainer (#76, @jeffreyad)
