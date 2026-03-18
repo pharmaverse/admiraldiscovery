@@ -12,4 +12,4 @@ discovery
 ## Format
 
 An object of class `spec_tbl_df` (inherits from `tbl_df`, `tbl`,
-`data.frame`) with 424 rows and 9 columns.
+`data.frame`) with 425 rows and 9 columns.

@@ -46,7 +46,7 @@ a character vector of function names
 
 ``` r
 get_admiral_deprecated()
-#> # A tibble: 11 × 2
+#> # A tibble: 18 × 2
 #>    package       fn                         
 #>    <chr>         <chr>                      
 #>  1 admiral       call_user_fun              
@@ -58,18 +58,18 @@ get_admiral_deprecated()
 #>  7 admiral       derive_var_merged_summary  
 #>  8 admiral       dthcaus_source             
 #>  9 admiral       get_summary_records        
-#> 10 admiralophtha derive_var_bcvacritxfl     
-#> 11 admiralophtha derive_var_bcvacritxfl_util
+#> 10 admiralonco   date_source                
+#> 11 admiralonco   derive_param_bor           
+#> 12 admiralonco   derive_param_clinbenefit   
+#> 13 admiralonco   derive_param_confirmed_bor 
+#> 14 admiralonco   derive_param_confirmed_resp
+#> 15 admiralonco   derive_param_response      
+#> 16 admiralonco   filter_pd                  
+#> 17 admiralophtha derive_var_bcvacritxfl     
+#> 18 admiralophtha derive_var_bcvacritxfl_util
 get_admiral_superseded()
-#> # A tibble: 6 × 2
-#>   package     fn                         
-#>   <chr>       <chr>                      
-#> 1 admiralonco derive_param_bor           
-#> 2 admiralonco derive_param_clinbenefit   
-#> 3 admiralonco derive_param_confirmed_bor 
-#> 4 admiralonco derive_param_confirmed_resp
-#> 5 admiralonco derive_param_response      
-#> 6 admiralonco filter_pd                  
+#> # A tibble: 0 × 2
+#> # ℹ 2 variables: package <chr>, fn <chr>
 get_fns_with_keyword(package = "admiral", keyword = "superseded")
 #> NULL
 ```

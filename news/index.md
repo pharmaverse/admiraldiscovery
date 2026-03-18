@@ -1,5 +1,10 @@
 # Changelog
 
+## admiraldiscovery 0.5.1
+
+- Added `AAGE`
+  ([\#62](https://github.com/pharmaverse/admiraldiscovery/issues/62))
+
 ## admiraldiscovery 0.5.0
 
 - Change maintainer
