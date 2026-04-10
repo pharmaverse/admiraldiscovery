@@ -6,7 +6,7 @@
 #' @examples
 #' admiral_pkg_versions()
 admiral_pkg_versions <- function() {
-  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralmetabolic") |>
+  c("admiral", "admiralonco", "admiralophtha", "admiralvaccine", "admiralmetabolic", "admiralneuro") |>
     lapply(\(x) glue::glue("{x} v{packageVersion(x)}")) |>
     unlist() |>
     glue::glue_collapse(sep = ", ", last = ", and ")
