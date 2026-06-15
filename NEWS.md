@@ -2,6 +2,8 @@
 
 * Added `AAGE` (#62)
 
+* Added variables from the {admiralneuro} package to the variable listing. (#83)
+
 # admiraldiscovery 0.5.0
 
 * Change maintainer (#76, @jeffreyad)
