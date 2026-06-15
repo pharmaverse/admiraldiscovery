@@ -12,5 +12,5 @@ admiral_pkg_versions()
 
 ``` r
 admiral_pkg_versions()
-#> admiral v1.4.1, admiralonco v1.4.0, admiralophtha v1.4.0, admiralvaccine v0.6.0, and admiralmetabolic v0.3.0
+#> admiral v1.5.0, admiralonco v1.4.1, admiralophtha v1.5.0, admiralvaccine v0.6.0, admiralmetabolic v0.3.0, and admiralneuro v0.2.1
 ```

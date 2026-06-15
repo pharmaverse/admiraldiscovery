@@ -5,6 +5,10 @@
 - Added `AAGE`
   ([\#62](https://github.com/pharmaverse/admiraldiscovery/issues/62))
 
+- Added variables from the {admiralneuro} package to the variable
+  listing.
+  ([\#83](https://github.com/pharmaverse/admiraldiscovery/issues/83))
+
 ## admiraldiscovery 0.5.0
 
 - Change maintainer
