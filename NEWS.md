@@ -1,5 +1,7 @@
 # admiraldiscovery 0.5.1
 
+* Added latest presentations in 2026 (#86, @manciniedoardo)
+
 * Added `AAGE` (#62)
 
 * Added variables from the {admiralneuro} package to the variable listing. (#83)
