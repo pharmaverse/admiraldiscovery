@@ -4,6 +4,8 @@
 
 * Added `AAGE` (#62)
 
+* Added `NFRLT` from `derive_var_nfrlt()`. (#82, @jeffreyad)
+
 * Added variables from the {admiralneuro} package to the variable listing. (#83)
 
 # admiraldiscovery 0.5.0
