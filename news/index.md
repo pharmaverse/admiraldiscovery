@@ -2,6 +2,10 @@
 
 ## admiraldiscovery 0.5.1
 
+- Added latest presentations in 2026
+  ([\#86](https://github.com/pharmaverse/admiraldiscovery/issues/86),
+  [@manciniedoardo](https://github.com/manciniedoardo))
+
 - Added `AAGE`
   ([\#62](https://github.com/pharmaverse/admiraldiscovery/issues/62))
 
