@@ -9,6 +9,10 @@
 - Added `AAGE`
   ([\#62](https://github.com/pharmaverse/admiraldiscovery/issues/62))
 
+- Added `NFRLT` from `derive_var_nfrlt()`.
+  ([\#82](https://github.com/pharmaverse/admiraldiscovery/issues/82),
+  [@jeffreyad](https://github.com/jeffreyad))
+
 - Added variables from the {admiralneuro} package to the variable
   listing.
   ([\#83](https://github.com/pharmaverse/admiraldiscovery/issues/83))
