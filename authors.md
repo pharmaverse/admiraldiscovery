@@ -14,7 +14,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/pharmaverse/admiraldiscovery/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/pharmaverse/admiraldiscovery/blob/v0.6.0/DESCRIPTION)
 
 Dickinson J, Sjoberg D, Tran A (2026). *admiraldiscovery: Discover
 admiral Functions*. R package version 0.6.0,
