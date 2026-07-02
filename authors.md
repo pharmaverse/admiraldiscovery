@@ -17,13 +17,13 @@ Source:
 [`DESCRIPTION`](https://github.com/pharmaverse/admiraldiscovery/blob/main/DESCRIPTION)
 
 Dickinson J, Sjoberg D, Tran A (2026). *admiraldiscovery: Discover
-admiral Functions*. R package version 0.5.0,
+admiral Functions*. R package version 0.6.0,
 <https://pharmaverse.github.io/admiraldiscovery/>.
 
     @Manual{,
       title = {admiraldiscovery: Discover admiral Functions},
       author = {Jeff Dickinson and Daniel D. Sjoberg and Amelia H. Tran},
       year = {2026},
-      note = {R package version 0.5.0},
+      note = {R package version 0.6.0},
       url = {https://pharmaverse.github.io/admiraldiscovery/},
     }
