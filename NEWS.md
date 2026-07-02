@@ -1,4 +1,4 @@
-# admiraldiscovery 0.5.1
+# admiraldiscovery 0.6.0
 
 * Added latest presentations in 2026 (#86, @manciniedoardo)
 
